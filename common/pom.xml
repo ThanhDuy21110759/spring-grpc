@@ -1,0 +1,79 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>common</artifactId>
+    <name>Spring gRPC Common</name>
+
+    <parent>
+        <artifactId>spring-grpc-parent</artifactId>
+        <groupId>com.duyho03</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <properties>
+        <grpc.version>1.40.1</grpc.version>
+        <protobuf.version>3.19.6</protobuf.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <artifactId>grpc-netty-shaded</artifactId>
+            <groupId>io.grpc</groupId>
+            <scope>runtime</scope>
+            <version>${grpc.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>grpc-protobuf</artifactId>
+            <groupId>io.grpc</groupId>
+            <version>${grpc.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>grpc-stub</artifactId>
+            <groupId>io.grpc</groupId>
+            <version>${grpc.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>protobuf-java</artifactId>
+            <groupId>com.google.protobuf</groupId>
+            <version>${protobuf.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>javax.annotation-api</artifactId>
+            <groupId>javax.annotation</groupId>
+            <version>1.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <extensions>
+            <extension>
+                <artifactId>os-maven-plugin</artifactId>
+                <groupId>kr.motd.maven</groupId>
+                <version>1.6.2</version>
+            </extension>
+        </extensions>
+        <plugins>
+            <plugin>
+                <artifactId>protobuf-maven-plugin</artifactId>
+                <groupId>org.xolstice.maven.plugins</groupId>
+                <version>0.6.1</version>
+                <configuration>
+                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}
+                    </pluginArtifact>
+                    <pluginId>grpc-java</pluginId>
+                    <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}
+                    </protocArtifact>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>compile-custom</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

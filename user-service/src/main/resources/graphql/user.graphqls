@@ -1,0 +1,41 @@
+input CreateUserRequest {
+    username: String!
+    email: String!
+    firstName: String
+    lastName: String
+    dob: String
+    city: String
+}
+
+input UpdateUserRequest {
+    username: String
+    email: String
+    firstName: String
+    lastName: String
+    dob: String
+    city: String
+}
+
+type UserResponse {
+    id: ID!
+    username: String!
+    email: String!
+    firstName: String
+    lastName: String
+    dob: String
+    city: String
+}
+
+type Query {
+    hello: String
+    goodbye: String
+    getProfile(userId: ID!): UserResponse!
+}
+
+type Mutation {
+    createUser(name: String!): String
+    testGlobalException: String
+    createProfile(request: CreateUserRequest!): UserResponse!
+    updateProfile(userId: ID!, request: UpdateUserRequest!): UserResponse!
+    deleteProfile(userId: ID!): String
+}

@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+// Options
+option java_multiple_files = true;
+option java_package = "com.micro.user.grpc";
+
+// Interface
+service UserGrpcService {
+  rpc GetProfile(google.protobuf.StringValue) returns (UserResponse);
+  rpc CreateProfile(UserRequest) returns (UserResponse);
+  rpc UpdateProfile(UpdateUserRequest) returns (UserResponse);
+  rpc DeleteProfile(google.protobuf.StringValue) returns (google.protobuf.StringValue);
+}
+
+message UserResponse {
+  string id = 1;
+  string username = 2;
+  string email = 3;
+  string firstName = 4;
+  string lastName = 5;
+  string dob = 6;
+  string city = 7;
+}
+
+message UserRequest {
+  string username = 1;
+  string email = 2;
+  string firstName = 3;
+  string lastName = 4;
+  google.protobuf.Timestamp dob = 5;
+  string city = 6;
+}
+
+message UpdateUserRequest {
+  UserRequest request = 1;
+  string userId = 2;
+}

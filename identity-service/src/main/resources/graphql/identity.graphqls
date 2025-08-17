@@ -1,0 +1,14 @@
+type Query {
+    helloGrpc: String
+    getProfile(userId: ID!): GrpcUserResponse
+}
+
+type GrpcUserResponse {
+    id: ID!
+    username: String!
+    email: String!
+    firstName: String
+    lastName: String
+    dob: String
+    city: String
+}

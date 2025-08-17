@@ -1,0 +1,29 @@
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: ${CONTEXT_PATH:/}
+
+spring:
+  application:
+    name: user-service
+  graphql:
+    graphiql:
+      enabled: true
+      path: /graphiql
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+grpc:
+  port: ${GRPC_PORT:9090}
+  enable-reflection: true
