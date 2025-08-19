@@ -1,7 +1,7 @@
 package com.example.identity.mapper;
 
-import com.example.identity.constant.ErrorCode;
-import com.example.identity.constant.ErrorType;
+import com.example.comon.constant.ErrorCode;
+import com.example.comon.constant.ErrorType;
 import com.example.identity.handler.AppException;
 import io.grpc.Metadata;
 import io.grpc.Status;

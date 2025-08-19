@@ -1,6 +1,6 @@
 package com.micro.user.controller;
 
-import com.micro.user.constant.ErrorCode;
+import com.example.comon.constant.ErrorCode;
 import com.micro.user.dto.UserRequest;
 import com.micro.user.dto.UserResponse;
 import com.micro.user.handler.AppException;

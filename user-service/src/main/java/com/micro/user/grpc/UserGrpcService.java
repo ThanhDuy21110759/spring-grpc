@@ -1,7 +1,7 @@
 package com.micro.user.grpc;
 
+import com.example.comon.constant.ErrorCode;
 import com.google.protobuf.StringValue;
-import com.micro.user.constant.ErrorCode;
 import com.micro.user.handler.AppException;
 import com.micro.user.mapper.GrpcExceptionMapper;
 import com.micro.user.mapper.UserMapper;

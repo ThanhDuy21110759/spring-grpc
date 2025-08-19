@@ -1,4 +1,4 @@
-package com.example.identity.constant;
+package com.example.comon.constant;
 
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package com.micro.user.constant;
+package com.example.comon.constant;
 
 import lombok.Getter;
 

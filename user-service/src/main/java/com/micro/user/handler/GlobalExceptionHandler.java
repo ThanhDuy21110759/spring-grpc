@@ -1,6 +1,6 @@
 package com.micro.user.handler;
 
-import com.micro.user.constant.ErrorCode;
+import com.example.comon.constant.ErrorCode;
 import graphql.GraphQLError;
 import graphql.GraphqlErrorBuilder;
 import graphql.schema.DataFetchingEnvironment;

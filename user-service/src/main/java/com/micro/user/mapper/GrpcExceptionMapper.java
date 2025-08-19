@@ -1,7 +1,7 @@
 package com.micro.user.mapper;
 
-import com.micro.user.constant.ErrorCode;
-import com.micro.user.constant.ErrorType;
+import com.example.comon.constant.ErrorCode;
+import com.example.comon.constant.ErrorType;
 import com.micro.user.handler.AppException;
 import io.grpc.Metadata;
 import io.grpc.Status;

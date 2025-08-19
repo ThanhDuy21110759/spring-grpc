@@ -1,6 +1,6 @@
 package com.micro.user.handler;
 
-import com.micro.user.constant.ErrorCode;
+import com.example.comon.constant.ErrorCode;
 import io.grpc.Metadata;
 import io.grpc.Status;
 import io.grpc.StatusRuntimeException;

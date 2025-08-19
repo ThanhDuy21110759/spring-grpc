@@ -1,6 +1,6 @@
 package com.example.identity.handler;
 
-import com.example.identity.constant.ErrorCode;
+import com.example.comon.constant.ErrorCode;
 import graphql.GraphQLError;
 import graphql.GraphqlErrorBuilder;
 import graphql.schema.DataFetchingEnvironment;
