@@ -1,0 +1,31 @@
+id,customerName,product,quantity,price,orderDate
+1,Tran Thi B,Headphone,1,120,2025-09-01
+2,Hoang Van E,Printer,1,200,2025-09-06
+3,Tran Van J,Webcam,3,210,2025-09-04
+4,Pham Van I,Headphone,1,120,2025-09-04
+5,Nguyen Van A,Monitor,1,300,2025-09-02
+6,Pham Van I,Webcam,2,140,2025-09-01
+7,Tran Thi B,Monitor,3,900,2025-09-07
+8,Nguyen Van A,USB Drive,2,40,2025-09-02
+9,Pham Van I,Laptop,1,1500,2025-09-07
+10,Hoang Van E,Monitor,2,600,2025-09-06
+11,Tran Van J,Keyboard,1,80,2025-09-02
+12,Pham Van I,Printer,2,400,2025-09-02
+13,Le Van C,Smartphone,2,2000,2025-09-06
+14,Tran Thi B,Webcam,1,70,2025-09-07
+15,Tran Van J,Webcam,3,210,2025-09-04
+16,Do Thi F,Webcam,3,210,2025-09-03
+17,Nguyen Van G,USB Drive,3,60,2025-09-02
+18,Le Van C,Webcam,2,140,2025-09-05
+19,Do Thi F,Tablet,1,600,2025-09-01
+20,Pham Thi D,Tablet,3,1800,2025-09-03
+21,Tran Thi B,Webcam,2,140,2025-09-02
+22,Le Thi H,Monitor,3,900,2025-09-04
+23,Hoang Van E,Webcam,2,140,2025-09-04
+24,Hoang Van E,Mouse,1,25,2025-09-02
+25,Pham Van I,Webcam,1,70,2025-09-05
+26,Nguyen Van G,Smartphone,3,3000,2025-09-01
+27,Do Thi F,Laptop,3,4500,2025-09-06
+28,Nguyen Van G,Mouse,2,50,2025-09-07
+29,Le Van C,Printer,1,200,2025-09-04
+30,Pham Van I,Tablet,2,1200,2025-09-02
